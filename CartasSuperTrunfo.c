@@ -14,6 +14,9 @@ char estado_1[3], estado_2[3];                                                  
 char cidade_1[50], cidade_2[50];                                                              //Ex: "Belo Horizonte"
 char código_1[10], código_2[10];                                                            // Ex: "A01"
 float média, divisão;
+float densidade_1, densidade_2;
+float pib_per_capita_1, pib_per_capita_2;
+float super_poder_1, super_poder_2;
 
 
 //Entrada de Dados
