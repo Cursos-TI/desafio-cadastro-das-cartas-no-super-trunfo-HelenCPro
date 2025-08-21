@@ -29,7 +29,7 @@ printf("Nome da Cidade: ");
 scanf("%s", &cidade_1);
 
 printf("População: "); 
-scanf("%d", &população_1);
+scanf("%lu", &população_1);
 
 printf("Área: (km) "); 
 scanf("%f", &área_1);
