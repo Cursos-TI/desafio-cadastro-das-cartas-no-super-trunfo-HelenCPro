@@ -81,9 +81,22 @@ printf("Densidade Populacional (hab/km²): %.2f\n", divisão);
 printf("PIB per Capita (reais): %.2f\n", média);
 
 
+// Calcular Super Poder
+super_poder_1 = (float)populacao_1 + area_1 + pib_1 + pontos_turisticos_1 + pib_per_capita_1 + (1.0f / densidade_1);
+super_poder_2 = (float)populacao_2 + area_2 + pib_2 + pontos_turisticos_2 + pib_per_capita_2 + (1.0f / densidade_2);
 
-return 0;
+// Comparações e resultados (simples)
+printf("Comparação de Cartas:\n\n");
 
+printf("População: Carta 1 venceu (%d)\n", populacao_1 > populacao_2);
+printf("Área: Carta 1 venceu (%d)\n", area_1 > area_2);
+printf("PIB: Carta 1 venceu (%d)\n", pib_1 > pib_2);
+printf("Pontos Turísticos: Carta 1 venceu (%d)\n", pontos_turisticos_1 > pontos_turisticos_2);
+printf("Densidade Populacional: Carta 1 venceu (%d)\n", densidade_1 < densidade_2); // menor vence
+printf("PIB per Capita: Carta 1 venceu (%d)\n", pib_per_capita_1 > pib_per_capita_2);
+printf("Super Poder: Carta 1 venceu (%d)\n", super_poder_1 > super_poder_2);
+
+    return 0;
 
 }
 
