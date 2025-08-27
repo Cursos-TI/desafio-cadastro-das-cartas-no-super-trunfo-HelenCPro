@@ -90,7 +90,7 @@ printf("PIB per Capita (reais): %.2f\n", média);
     int area_vencedora = área_1 > área_2;
     int pib_vencedora = pib_1 > pib_2;
     int pontos_vencedora = pontos_turisticos_1 > pontos_turisticos_2;
-    int densidade_vencedora = densidade_populacional1 < densidade_populacional2; // menor vence
+    int densidade_vencedora = densidade_populacional1 > densidade_populacional2; // menor vence
     int pib_capita_vencedora = pib_per_capita_1 > pib_per_capita_2;
     int super_poder_vencedora = super_poder1 > super_poder2;
 
@@ -107,6 +107,10 @@ printf("PIB per Capita (reais): %.2f\n", média);
     printf("Densidade Populacional: Carta 1 venceu (%d)\n", densidade_vencedora);
     printf("PIB per Capita: Carta 1 venceu (%d)\n", pib_capita_vencedora);
     printf("Super Poder: Carta 1 venceu (%d)\n", super_poder_vencedora);
+
+
+    
+    printf("Comparações de Cartas(Atributo População)\n");
 
     if (população_1 > população_2){
         printf(" A carta 1 venceu\n");
