@@ -24,7 +24,7 @@ float densidade_populacional1, densidade_populacional2;
 
 
 printf("Estado: "); 
-scanf("%c", &estado_1);
+scanf("%s", &estado_1);
 
 printf("Código: "); 
 scanf("%s", &código_1);
@@ -109,9 +109,9 @@ printf("PIB per Capita (reais): %.2f\n", média);
     printf("Super Poder: Carta 1 venceu (%d)\n", super_poder_vencedora);
 
     if (população_1 > população_2){
-        printf(" A carta 1 venceu\n")
+        printf(" A carta 1 venceu\n");
     } else { 
-        printf("A carta 2 venceu!"\n);
+        printf("A carta 2 venceu!\n");
     }
 
     return 0;
