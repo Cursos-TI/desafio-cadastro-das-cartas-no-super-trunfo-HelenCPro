@@ -108,6 +108,12 @@ printf("PIB per Capita (reais): %.2f\n", média);
     printf("PIB per Capita: Carta 1 venceu (%d)\n", pib_capita_vencedora);
     printf("Super Poder: Carta 1 venceu (%d)\n", super_poder_vencedora);
 
+    if (população_1 > população_2){
+        printf(" A carta 1 venceu\n")
+    } else { 
+        printf("A carta 2 venceu!"\n);
+    }
+
     return 0;
 
 }
